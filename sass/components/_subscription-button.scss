@@ -1,0 +1,22 @@
+.button--subscription {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.button__text {
+  margin-left: 29px;
+  margin-right: 10px;
+  display: block;
+}
+
+.button__icon {
+  fill: var(--third-text-color);
+  padding: 0;
+  margin: 0;
+}

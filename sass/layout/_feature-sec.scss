@@ -1,0 +1,13 @@
+.feature-section {
+  min-width: 320px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--primary-background-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

@@ -1,0 +1,37 @@
+.join__text {
+  color: var(--third-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.join-table {
+  display: flex;
+}
+
+.join-table__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-table__icon {
+  fill: var(--third-text-color);
+}
+
+.join-table__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #43444d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--third-background-color);
+  }
+}
