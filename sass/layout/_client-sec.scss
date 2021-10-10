@@ -1,4 +1,10 @@
 .client-section {
   background-color: var(--primary-background-color);
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-section {
+    padding: 94px 0;
+  }
 }

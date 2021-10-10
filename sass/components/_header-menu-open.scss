@@ -1,0 +1,28 @@
+.button-menu-open {
+  display: block;
+  width: 24px;
+  height: 16px;
+  // border: 1px solid transparent;
+  border: none;
+  background-color: var(--primary-background-color);
+  cursor: pointer;
+  // padding: 10px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu-open {
+    display: none;
+  }
+}
+
+.button-menu-open__icon {
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .button-menu-open:hover &,
+  .button-menu-open:focus & {
+    fill: var(--secondary-text-color);
+  }
+}

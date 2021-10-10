@@ -5,7 +5,15 @@
 
 .nav {
   display: flex;
-  align-items: center;
+
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__item:not(:last-child) {

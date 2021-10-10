@@ -1,5 +1,18 @@
 .connection {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .connection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connection {
+    flex-direction: row;
+  }
 }
 
 .connection__icon {
@@ -13,8 +26,10 @@
   margin-left: auto;
 }
 
-.connection__item + .connection__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .connection__item + .connection__item {
+    margin-left: 50px;
+  }
 }
 
 .connection__link {
@@ -24,12 +39,18 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 16px 0;
+  padding: 5px 0;
   display: flex;
   transition: var(--transition-color);
   &:hover,
   &:focus {
     color: var(--secondary-text-color);
     fill: var(--secondary-text-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connection__link {
+    padding: 16px 0;
   }
 }
