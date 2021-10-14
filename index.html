@@ -66,13 +66,79 @@
           </li>
         </ul>
 
-        <!-- кнопка мобильного меню -->
+        <!-- кнопка открытия мобильного меню -->
 
-        <button type="button" title="Open" class="button-menu-open">
-          <svg class="button-menu-open__icon" width="40" height="40">
-            <use href="./image/sprite.svg#icon-mob-btn"></use>
+        <button
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          title="Open"
+          class="menu-open js-open-menu"
+        >
+          <svg class="menu-open__icon" width="24" height="16">
+            <use href="./image/sprite.svg#icon-menu-open"></use>
           </svg>
         </button>
+
+        <!-- мобильное меню -->
+
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <ul class="mobile-list list">
+            <li class="mobile-list__item">
+              <a class="mobile-list__link mobile-list__link--active list" href="index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="mobile-list__item">
+              <a class="mobile-list__link list" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-list__item">
+              <a class="mobile-list__link list" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-connection list">
+            <li class="mobile-connection__item">
+              <a class="mobile-connection__link list" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-connection__item">
+              <a
+                class="mobile-connection__link mobile-connection__link--email list"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link list" href="#">Instagram</a>
+              <span class="mobile-socials__pipe">&#124;</span>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link list" href="#">Twitter</a>
+              <span class="mobile-socials__pipe">&#124;</span>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link list" href="#">Facebook</a>
+              <span class="mobile-socials__pipe">&#124;</span>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link list" href="#">LinkedIn</a>
+            </li>
+          </ul>
+
+          <!-- кнопка зыкрытия мобильного меню -->
+
+          <button class="menu-close js-close-menu" title="Close" type="button">
+            <svg class="menu-close__icon" width="18" height="18">
+              <use href="./image/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -714,8 +780,7 @@
         <!-- присоединяйтесь -->
 
         <div class="join">
-          <p class="join__text">присоединяйтесь</p>
-
+          <p class="footer__title">присоединяйтесь</p>
           <ul class="join-table list">
             <li class="join-table__item">
               <a class="join-table__link" href="">
@@ -754,10 +819,11 @@
         <!-- Подпишитесь на рассылку -->
 
         <form action="#" class="subscription">
-          <p class="subscription__title">Подпишитесь на рассылку</p>
+          <label class="footer__title" for="subscription-name">Подпишитесь на рассылку</label>
           <div class="subscription__wrapper">
             <input
               class="subscription__input"
+              id="subscription-name"
               type="email"
               name="subscription-name"
               placeholder="E-mail"
@@ -876,6 +942,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

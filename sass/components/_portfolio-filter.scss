@@ -1,11 +1,30 @@
 .filtre {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filtre {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filtre {
+    margin-bottom: 50px;
+  }
 }
 
 .filtre__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filtre__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
 }
 
 .button--filtre {

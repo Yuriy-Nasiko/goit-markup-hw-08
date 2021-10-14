@@ -7,13 +7,20 @@
 
 .modal-form-checkbox__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 1.166;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-checkbox__text {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    margin: 0 auto;
+  }
 }
 
 .modal-form-checkbox__link {

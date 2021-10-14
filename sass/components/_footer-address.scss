@@ -2,8 +2,10 @@
   margin-top: 20px;
 }
 
-.address-table {
-  text-align: center;
+@media screen and (max-width: 1199px) {
+  .address-table {
+    text-align: center;
+  }
 }
 
 .address-table__list:not(:last-child) {

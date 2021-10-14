@@ -1,10 +1,22 @@
-// .block-info {
-//   margin-right: 70px;
-// }
+@media screen and (min-width: 768px) {
+  .block-info {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-info {
+    margin-right: 70px;
+  }
+}
 
 .block-info__logo {
-  // max-width: 145px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .block-info__logo {
+    text-align: left;
+  }
 }
 
 .logo__studio--footer {

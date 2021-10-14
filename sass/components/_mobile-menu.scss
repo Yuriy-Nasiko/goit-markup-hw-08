@@ -1,0 +1,126 @@
+.menu-open {
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .menu-open:hover &,
+  .menu-open:focus & {
+    fill: var(--secondary-text-color);
+  }
+}
+
+.menu-close {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--primary-background-color);
+  cursor: pointer;
+  padding: 0px;
+  margin-left: auto;
+}
+
+.menu-close__icon {
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .menu-close:hover &,
+  .menu-close:focus & {
+    fill: var(--secondary-text-color);
+  }
+}
+
+// .mobile-list
+.mobile-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-list__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile-list__link--active {
+  color: var(--secondary-text-color);
+}
+
+// .mobile-connection
+// .mobile-connection__item
+
+.mobile-connection__link {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mobile-connection__link--email {
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+
+.mobile-socials {
+  display: flex;
+}
+
+.mobile-socials__item {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.mobile-socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mobile-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.222px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-right: 10px;
+}
+
+.mobile-socials__pipe {
+  display: block;
+  color: rgba(33, 33, 33, 0.2);
+  // width: 22px;
+  // border: 1px solid rgba(33, 33, 33, 0.2);
+  // transform: rotate(90deg);
+}
+@media screen and (max-width: 767px) {
+  .mobile-menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-background-color);
+    color: var(--third-text-color);
+    padding: 40px 48px;
+    z-index: 6;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.mobile-menu-container.is-open {
+  transform: translateX(0);
+}
