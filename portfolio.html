@@ -65,6 +65,80 @@
             >
           </li>
         </ul>
+
+        <!-- кнопка открытия мобильного меню -->
+
+        <button
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          title="Open"
+          class="menu-open js-open-menu"
+        >
+          <svg class="menu-open__icon" width="24" height="16">
+            <use href="./image/sprite.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+
+        <!-- мобильное меню -->
+
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+          <ul class="mobile-list list">
+            <li class="mobile-list__item">
+              <a class="mobile-list__link link" href="index.html">Студия</a>
+            </li>
+            <li class="mobile-list__item">
+              <a class="mobile-list__link mobile-list__link--active link" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-list__item">
+              <a class="mobile-list__link link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-connection list">
+            <li class="mobile-connection__item">
+              <a class="mobile-connection__link link" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-connection__item">
+              <a
+                class="mobile-connection__link mobile-connection__link--email link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="#">Instagram</a>
+              <span class="mobile-socials__pipe">&#124;</span>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="#">Twitter</a>
+              <span class="mobile-socials__pipe">&#124;</span>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="#">Facebook</a>
+              <span class="mobile-socials__pipe">&#124;</span>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+
+          <!-- кнопка зыкрытия мобильного меню -->
+
+          <button class="menu-close js-close-menu" title="Close" type="button">
+            <svg class="menu-close__icon" width="18" height="18">
+              <use href="./image/sprite.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -101,7 +175,7 @@
             <!-- Технокряк -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -146,7 +220,7 @@
             <!-- Постер New Orlean vs Golden Star -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -194,7 +268,7 @@
             <!-- Ресторан Seafood -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -239,7 +313,7 @@
             <!-- Проект Prime -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -284,7 +358,7 @@
             <!-- Проект Boxes -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -329,7 +403,7 @@
             <!-- Inspiration has no Borders -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -377,7 +451,7 @@
             <!-- Издание Limited Edition -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -426,7 +500,7 @@
             <!-- Проект LAB -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -471,7 +545,7 @@
             <!-- Growing Business -->
 
             <li class="content__list">
-              <a href="" class="content__link list">
+              <a href="" class="content__link link">
                 <div class="content__image">
                   <picture class="content__img">
                     <source
@@ -534,7 +608,7 @@
             <ul class="address-table list">
               <li class="address-table__list">
                 <a
-                  class="address-table__navigation list"
+                  class="address-table__navigation link"
                   href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,"
                   target="_blank"
                   rel="noreferrer noopeneer"
@@ -544,13 +618,13 @@
               </li>
 
               <li class="address-table__list">
-                <a class="address-table__connect list" href="mailto:info@devstudio.com"
+                <a class="address-table__connect link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
 
               <li class="address-table__list">
-                <a class="address-table__connect list" href="tel:+380961111111"
+                <a class="address-table__connect link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -564,7 +638,7 @@
           <p class="footer__title">присоединяйтесь</p>
           <ul class="join-table list">
             <li class="join-table__item">
-              <a class="join-table__link" href="">
+              <a class="join-table__link" href="#">
                 <svg class="join-table__icon socials__icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-instagram"></use>
                 </svg>
@@ -572,7 +646,7 @@
             </li>
 
             <li class="join-table__item">
-              <a class="join-table__link" href="">
+              <a class="join-table__link" href="#">
                 <svg class="join-table__icon socials__icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-twitter"></use>
                 </svg>
@@ -580,7 +654,7 @@
             </li>
 
             <li class="join-table__item">
-              <a class="join-table__link" href="">
+              <a class="join-table__link" href="#">
                 <svg class="join-table__icon socials__icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-facebook"></use>
                 </svg>
@@ -588,7 +662,7 @@
             </li>
 
             <li class="join-table__item">
-              <a class="join-table__link" href="">
+              <a class="join-table__link" href="#">
                 <svg class="join-table__icon socials__icon" width="20" height="20">
                   <use href="./image/sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -622,6 +696,7 @@
       </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
