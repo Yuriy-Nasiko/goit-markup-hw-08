@@ -30,15 +30,12 @@
 .button--filtre {
   color: var(--page-text);
   background-color: #f5f4fa;
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
+  @include font(16px, 500, 26px, 0.03em);
   padding: 6px 22px;
   height: auto;
   min-width: auto;
+  @extend %transform-icon;
   transition-property: color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--third-text-color);

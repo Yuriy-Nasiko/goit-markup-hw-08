@@ -33,15 +33,12 @@
 }
 
 .connection__link {
+  @include font(14px, 500, 16px, 0.02em);
+  @extend %transform-icon;
+  transition-property: var(--transition-color);
   color: var(--primary-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   padding: 5px 0;
   display: flex;
-  transition: var(--transition-color);
   &:hover,
   &:focus {
     color: var(--secondary-text-color);

@@ -14,10 +14,9 @@
 
 .address-table__navigation {
   color: var(--third-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: var(--transition-color);
+  @include font(14px, 400, 24px, 0.03em);
+  @extend %transform-icon;
+  transition-property: color;
   &:hover,
   &:focus {
     color: var(--secondary-text-color);
@@ -26,10 +25,9 @@
 
 .address-table__connect {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: var(--transition-color);
+  @include font(14px, 400, 24px, 0.03em);
+  @extend %transform-icon;
+  transition-property: color;
   &:hover,
   &:focus {
     color: var(--secondary-text-color);

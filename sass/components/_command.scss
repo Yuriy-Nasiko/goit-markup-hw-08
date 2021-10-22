@@ -1,17 +1,13 @@
 .command__title {
   color: var(--page-text);
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.178;
+  @include font(28px, 700, 33px, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .command__title {
-    font-size: 36px;
-    line-height: 1.166;
+    @include font(36px, 700, 42px, 0.03em);
     margin-bottom: 50px;
   }
 }
@@ -68,22 +64,17 @@
 }
 
 .command-item__name {
+  @include font(16px, 500, 18px, 0.03em);
   color: var(--page-text);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-bottom: 10px;
   display: block;
 }
 
 .command-item__position {
+  @include font(16px, 400, 19px, 0.03em);
   color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   display: block;
   margin-bottom: 16px;
 }
@@ -105,7 +96,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transform-icon;
+  transition-property: background-color;
   &:hover,
   &:focus {
     background-color: var(--third-background-color);
@@ -114,7 +106,7 @@
 
 .socials__icon {
   fill: var(--link-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transform-icon;
   .socials__link:hover &,
   .socials__link:focus & {
     fill: var(--third-text-color);

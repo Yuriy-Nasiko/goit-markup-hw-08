@@ -15,10 +15,8 @@
 }
 
 .icon-button-x {
+  @extend %transform-icon;
   fill: #000000;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .button-x:hover &,
   .button-x:focus & {
     fill: var(--secondary-text-color);

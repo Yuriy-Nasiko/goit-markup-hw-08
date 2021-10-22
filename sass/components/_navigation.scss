@@ -20,15 +20,12 @@
 
 .nav__link {
   color: var(--page-text);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 500, 16px, 0.02em);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: var(--transition-color);
+  @extend %transform-icon;
+  transition-property: var(--transition-color);
   &:hover,
   &:focus {
     color: var(--secondary-text-color);

@@ -31,25 +31,25 @@
     <header class="header">
       <div class="wrapper container">
         <nav class="navigation">
-          <a class="logo navigation__logo" lang="en" href="index.html"
+          <a class="logo navigation__logo link" lang="en" href="index.html"
             ><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
           >
           <ul class="nav list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="index.html">Студия</a>
+              <a class="nav__link nav__link--active link" href="index.html">Студия</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="portfolio.html">Портфолио</a>
+              <a class="nav__link link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
+              <a class="nav__link link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
 
         <ul class="connection wrapper__connection list">
           <li class="connection__item">
-            <a class="connection__link" href="mailto:info@devstudio.com">
+            <a class="connection__link link" href="mailto:info@devstudio.com">
               <svg class="connection__icon" width="16" height="12">
                 <use href="./image/sprite.svg#icon-envelope"></use>
               </svg>
@@ -57,7 +57,7 @@
             >
           </li>
           <li class="connection__item">
-            <a class="connection__link" href="tel:+380961111111">
+            <a class="connection__link link" href="tel:+380961111111">
               <svg class="connection__icon" width="10" height="16">
                 <use href="./image/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -71,18 +71,18 @@
         <button
           type="button"
           aria-expanded="false"
-          aria-controls="mobile-menu"
+          aria-controls="mobile-menu-button"
           title="Open"
-          class="menu-open js-open-menu"
+          class="mobile-menu-button js-open-menu"
         >
-          <svg class="menu-open__icon" width="24" height="16">
+          <svg class="mobile-menu-button__icon" width="24" height="16">
             <use href="./image/sprite.svg#icon-menu-open"></use>
           </svg>
         </button>
 
         <!-- мобильное меню -->
 
-        <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-container js-menu-container" id="mobile-menu-button">
           <ul class="mobile-list list">
             <li class="mobile-list__item">
               <a class="mobile-list__link mobile-list__link--active link" href="index.html"
@@ -134,8 +134,8 @@
           </div>
           <!-- кнопка зыкрытия мобильного меню -->
 
-          <button class="menu-close js-close-menu" title="Close" type="button">
-            <svg class="menu-close__icon" width="18" height="18">
+          <button class="mobile-menu-button js-close-menu" title="Close" type="button">
+            <svg class="mobile-menu-button__icon" width="18" height="18">
               <use href="./image/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
@@ -227,38 +227,51 @@
           <ul class="item list">
             <li class="item__list">
               <div class="item__thumb">
-                <img
-                  srcset="./image/doing/image1/img1.jpg 1x, ./image/doing/image1/img1@2x.jpg 2x"
-                  sizes="(min-width: 1200px) 100vw"
-                  src="./image/doing/image1/img1.jpg"
-                  alt="Десктопные приложения"
-                />
+                <picture>
+                  <source
+                    srcset="./image/doing/image1/img1.webp 1x, ./image/doing/image1/img1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./image/doing/image1/img1.jpg 1x, ./image/doing/image1/img1@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img src="./image/doing/image1/img1.jpg" alt="Десктопные приложения" />
+                </picture>
                 <p class="item__text">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="item__list">
               <div class="item__thumb">
-                <img
-                  srcset="./image/doing/image2/img2.jpg 1x, ./image/doing/image2/img2@2x.jpg 2x"
-                  sizes="(min-width: 1200px) 100vw"
-                  src="./image/doing/image2/img2.jpg"
-                  alt="Мобильные приложения"
-                />
-
+                <picture>
+                  <source
+                    srcset="./image/doing/image2/img2.webp 1x, ./image/doing/image2/img2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./image/doing/image2/img2.jpg 1x, ./image/doing/image2/img2@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img src="./image/doing/image2/img2.jpg" alt="Мобильные приложения" />
+                </picture>
                 <p class="item__text">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="item__list">
               <div class="item__thumb">
-                <img
-                  srcset="./image/doing/image3/img3.jpg 1x, ./image/doing/image3/img3@2x.jpg 2x"
-                  sizes="(min-width: 1200px) 100vw"
-                  src="./image/doing/image3/img3.jpg"
-                  alt="Дизайнерские решения"
-                />
-
+                <picture>
+                  <source
+                    srcset="./image/doing/image3/img3.webp 1x, ./image/doing/image3/img3@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./image/doing/image3/img3.jpg 1x, ./image/doing/image3/img3@2x.jpg 2x"
+                    type="image/jpeg"
+                  />
+                  <img src="./image/doing/image3/img3.jpg" alt="Дизайнерские решения" />
+                </picture>
                 <p class="item__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -744,7 +757,7 @@
         <!-- Логотип -->
 
         <div class="block-info">
-          <a class="logo block-info__logo" lang="en" href="index.html">
+          <a class="logo block-info__logo link" lang="en" href="index.html">
             <span class="logo__web">Web</span><span class="logo__studio--footer">Studio</span></a
           >
 
@@ -819,7 +832,7 @@
 
         <!-- Подпишитесь на рассылку -->
 
-        <form action="#" class="subscription">
+        <form action="#" class="subscription footer__subscription">
           <label class="footer__title" for="subscription-name">Подпишитесь на рассылку</label>
           <div class="subscription__wrapper">
             <input
@@ -917,15 +930,13 @@
               name="policy"
               required
             />
-            <label class="modal-form-checkbox__text" for="check"
-              ><span class="modal-form-checkbox__icon">
-                <svg width="11" height="8">
-                  <use href="./image/sprite.svg#icon-check"></use>
-                </svg>
-              </span>
-              Соглашаюсь с рассылкой и принимаю &#160;
-              <a class="modal-form-checkbox__link" href="#">Условия договора</a></label
-            >
+            <label class="modal-form-checkbox__text" for="check">
+              <svg class="modal-form-checkbox__icon" width="11" height="8">
+                <use href="./image/sprite.svg#icon-check"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a class="modal-form-checkbox__link" href="#">Условия договора</a>
+            </label>
           </div>
 
           <!-- modal-button -->

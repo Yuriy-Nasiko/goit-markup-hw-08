@@ -1,17 +1,12 @@
 .logo {
   font-family: $secondaryFont;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
+  @include font(24px, 700, 28px, 0.03em);
   display: block;
 }
 
 @media screen and (min-width: 1200px) {
   .logo {
-    font-size: 26px;
-    line-height: 1.192;
+    @include font(26px, 700, 31px, 0.03em);
   }
 }
 
@@ -25,6 +20,7 @@
 
 .navigation__logo {
   margin-right: auto;
+  padding: 16px 0;
 }
 
 @media screen and (min-width: 768px) {
