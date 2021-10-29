@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
   .block-info {
     margin-right: 165px;
+    width: 231px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -11,10 +12,8 @@
 
 .block-info__logo {
   text-align: center;
-}
 
-@media screen and (min-width: 1200px) {
-  .block-info__logo {
+  @media screen and (min-width: 1200px) {
     text-align: left;
   }
 }

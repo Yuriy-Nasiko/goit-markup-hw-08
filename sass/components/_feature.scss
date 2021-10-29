@@ -1,9 +1,7 @@
 .feature {
   display: block;
-}
 
-@media screen and (min-width: 768px) {
-  .feature {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -27,10 +25,8 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
 
-@media screen and (min-width: 1200px) {
-  .feature__headline {
+  @media screen and (min-width: 1200px) {
     text-align: left;
   }
 }
@@ -42,24 +38,18 @@
 
 .feature__list {
   width: 100%;
-}
 
-@media screen and (max-width: 767px) {
-  .feature__list:not(:last-child) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .feature__list {
+  @media screen and (min-width: 768px) {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .feature__list {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 120px) / 4);
   }
 }

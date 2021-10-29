@@ -3,10 +3,8 @@
   @include font(28px, 700, 33px, 0.03em);
   text-align: center;
   margin-bottom: 30px;
-}
 
-@media screen and (min-width: 1200px) {
-  .command__title {
+  @media screen and (min-width: 1200px) {
     @include font(36px, 700, 42px, 0.03em);
     margin-bottom: 50px;
   }
@@ -14,10 +12,8 @@
 
 .command-item {
   display: block;
-}
 
-@media screen and (min-width: 768px) {
-  .command-item {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -30,24 +26,20 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-background-color);
-}
 
-@media screen and (max-width: 767px) {
-  .command-item__list:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-}
 
-@media screen and (min-width: 768px) {
-  .command-item__list {
+  @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-top: 30px;
     margin-left: 30px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .command-item__list {
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 120px) / 4);
   }
 }

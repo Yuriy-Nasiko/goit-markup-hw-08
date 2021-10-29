@@ -1,16 +1,12 @@
 .connection {
   display: none;
-}
 
-@media screen and (min-width: 768px) {
-  .connection {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .connection {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
@@ -44,10 +40,8 @@
     color: var(--secondary-text-color);
     fill: var(--secondary-text-color);
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .connection__link {
-    padding: 16px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
   }
 }

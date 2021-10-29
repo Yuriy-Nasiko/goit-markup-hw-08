@@ -2,16 +2,11 @@
   font-family: $secondaryFont;
   @include font(24px, 700, 28px, 0.03em);
   display: block;
-}
+  color: var(--secondary-text-color);
 
-@media screen and (min-width: 1200px) {
-  .logo {
+  @media screen and (min-width: 1200px) {
     @include font(26px, 700, 31px, 0.03em);
   }
-}
-
-.logo__web {
-  color: var(--secondary-text-color);
 }
 
 .logo__studio {
@@ -20,17 +15,13 @@
 
 .navigation__logo {
   margin-right: auto;
-  padding: 16px 0;
-}
+  padding: 24px 0;
 
-@media screen and (min-width: 768px) {
-  .navigation__logo {
+  @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .navigation__logo {
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }
