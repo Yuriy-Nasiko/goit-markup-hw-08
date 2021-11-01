@@ -16,8 +16,14 @@
   margin-right: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .filtre__item:nth-child(-n + 3) {
+@media screen and (max-width: 406px) {
+  .filtre__item:nth-child(-n + 4) {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 406px) and (max-width: 767px) {
+  .filtre__item:not(:nth-child(n + 4)) {
     margin-bottom: 15px;
   }
 }
@@ -28,7 +34,8 @@
   @include font(16px, 500, 26px, 0.03em);
   padding: 6px 22px;
   height: auto;
-  min-width: auto;
+  // min-width: auto;
+  width: 100%;
   @extend %transform-icon;
   transition-property: color, box-shadow;
   &:hover,
