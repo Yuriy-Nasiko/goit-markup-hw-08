@@ -16,25 +16,24 @@
   margin-right: 8px;
 }
 
-@media screen and (max-width: 406px) {
+@media screen and (max-width: 275px) {
   .filtre__item:nth-child(-n + 4) {
     margin-bottom: 15px;
   }
 }
 
-@media screen and (min-width: 406px) and (max-width: 767px) {
+@media screen and (min-width: 251px) and (max-width: 767px) {
   .filtre__item:not(:nth-child(n + 4)) {
     margin-bottom: 15px;
   }
 }
 
-.button--filtre {
+.filtre__button {
   color: var(--page-text);
   background-color: #f5f4fa;
   @include font(16px, 500, 26px, 0.03em);
   padding: 6px 22px;
   height: auto;
-  // min-width: auto;
   width: 100%;
   @extend %transform-icon;
   transition-property: color, box-shadow;
@@ -45,4 +44,11 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+}
+
+.filtre__button--current {
+  color: var(--third-text-color);
+  background-color: var(--third-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
