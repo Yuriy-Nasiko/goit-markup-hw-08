@@ -1737,7 +1737,6 @@ img {
   padding: 40px 48px;
   margin: 0 auto;
   overflow: hidden;
-  overflow-y: scroll;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition-property: -webkit-transform;
