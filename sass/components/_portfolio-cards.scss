@@ -22,15 +22,23 @@
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--third-text-color);
-  padding: 63px 24px;
+  padding: 77px 24px;
   @include font(18px, 400, 28px, 0.03em);
-  overflow: hidden;
+  overflow: auto;
   transform: translateY(101%);
   @extend %transform-icon;
   transition-property: transform;
   .content__link:hover &,
   .content__link:focus & {
     transform: translateY(0);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
 
